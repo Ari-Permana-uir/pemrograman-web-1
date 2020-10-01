@@ -8,23 +8,37 @@
 
         <form action="">
             <label for="">first name:</label>
-            <input type="text"><br>
+            <input type="text" name="firstName"><br>
             <label for="">last name:</label>
-            <input type="text"><br>
+            <input type="text" name="lastName"><br>
 
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>
 
-            <label for="">email</label>
-            <input type="text"><br>
-            <label for="">password</label>
-            <input type="password"><br>
+            <label for="">favourite car</label>
+            <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            </select><br>
+            <label for="">description :</label><br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
 
-            <input type="checkbox" name="" id="" >
+            <label for="">email</label>
+            <input type="text" name="email"><br>
+            <label for="">password</label>
+            <input type="password" name="password"><br>
+
+            <br>
+            <input type="checkbox" name="agreement" id="" value="agree" >
             <label for="">saya setuju untuk mendaftar</label><br>
-            <input type="register" >
+            <br>
+            <input type="submit" value="register" >
+            <button type="button" onclick="alert('terimakasih telah mendaftar!')">Click Me!</button>
+
 
         </form>
     </body>
